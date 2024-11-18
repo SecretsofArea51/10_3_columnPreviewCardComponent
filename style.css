@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    /* font-family: "Big Shoulders Text", serif; */
+    font-family: "Lexend Deca", serif;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+main{
+    min-height: 96vh;
+    display: flex;
+    /* justify-content: center; */
+    padding: 0 0.5rem 0 0.5rem;
+    /* to keep some distance from right and left sides in a phone */
+}
+.card-container{
+    margin: 1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    max-width: 57rem;
+    margin: auto;
+}
+.card p{
+    margin-bottom: 2rem;
+}
+.card{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.card img{
+    width: 4rem;
+    height: 2.5rem;
+}
+.card h1{
+    font-family: "Big Shoulders Text", serif;
+    color: hsl(0, 0%, 95%);
+    font-weight: 700;
+}
+.card a{
+    font-family: "Big Shoulders Text", serif;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 3rem;
+    padding: 1rem 2rem 1rem 2rem;
+    margin-top:auto;
+    margin-right: auto;
+    &:hover{
+        background-color: unset;
+        color: white;
+        border: 2px solid white;
+    }
+}
+.orange-card{
+    background-color: #E28525;
+}
+.cyan-card{
+    background-color: #016972;
+}
+.dark-cyan-card{
+    background-color: #00403F;
+}
+.orange-card a{
+    color: #E28525;
+}
+.cyan-card a{
+    color: #016972;
+}
+.dark-cyan-card a{
+    color: #00403F;
+}
+.name{
+    font-size: 2rem;
+    font-family: "Stylish", serif;
+    text-align: center;
+    color: indianred;
+}
+.name a{
+    /* text-decoration: none; */
+}
+@media(max-width:43.75rem){
+    .card-container{
+        flex-direction: column;
+    }
+    .card{
+        width: unset;
+    }   
+}
